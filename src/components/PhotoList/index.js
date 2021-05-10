@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import photo from '../../assets/small/commercial/0.jpg';
 
 const PhotoList = ({ category }) => {
 
@@ -108,8 +107,6 @@ const PhotoList = ({ category }) => {
             <div className="flex-row">
                 {currentPhotos.map((image, i) => (
                     <img
-                        src={(photo)}
-                        // {`url("${require("../../assets/")}")`}
                         src={require(`../../assets/small/${category}/${i}.jpg`)}
                         alt={image.name}
                         className="img-thumbnail mx-1"

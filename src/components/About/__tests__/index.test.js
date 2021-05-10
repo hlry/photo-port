@@ -6,7 +6,7 @@ import About from '..';
 afterEach(cleanup);
 
 // describe function to declare component we're testing
-describe('About component', () => {
+describe('About component renders', () => {
     // First Test - baseline to verify that the component is rendering.
     it('renders', () => {
         render(<About />);
